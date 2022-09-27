@@ -1,0 +1,74 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: gray;
+  padding: 0 30px;
+  margin: 20px auto;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body>* {
+  text-align: center;
+  display: block;
+}
+
+
+#chooseDigimon,
+#getDigimon {
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.75rem;
+  color: gold;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+#requestedDigiImage {
+  width: 20%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 5px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  #requestedDigiImage {
+    width: 80%;
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
+
+	<title>Digimon API</title>
+
+	<!-- external CSS link -->
+	<link rel="icon" href="data:,"> <!-- stops 'missing favicon' error in console -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<h1>Which Digimon would you like information on?</h1>
+
+	<form onsubmit="return false">
+		<input type="text" id="chooseDigimon">
+		<input type="submit" id="getDigimon" value="Get Digimon">
+	</form>
+	
+	<h2 id="requestedDigiName"></h2>
+
+	<img src="about:blank" alt="" id="requestedDigiImage">
+
+	<h3 id="requestedDigiData"></h3>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
